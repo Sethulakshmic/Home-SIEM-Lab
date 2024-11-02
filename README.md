@@ -20,7 +20,7 @@ This project sets up a home lab for Elastic Stack Security Information and Event
 - Setting up alerts for security events.
 
 ## Setting up an Elastic Account
-After registering, log in to the Elastic Cloud console at https://cloud.elastic.co. Click on "Start your free trial" to kick off the process.
+After registering, logged in to the Elastic Cloud console at https://cloud.elastic.co. Click on "Start your free trial" to kick off the process.
 
 ## Setting up the Elastic Agent on the Linux VM 
 
@@ -38,7 +38,23 @@ In order to effectively monitor security events on your Kali VM and ensure they'
 - Verify that the agent has been installed correctly, run the following command in your Kali terminal:
   
    sudo systemctl status elastic-agent.service
-  
+#### For generating some Security-related Events on the Kali VM, here I used Nmap Tool .
+initiate a NMap scan on your Kali machine:
+nmap -sC -sV -p- localhost
+The above command performs a detailed network scan on your local machine, using default scripts and version detection across all 65535 ports.
+
+### Querying for security events just created
+With data seamlessly forwarded from the Kali VM to our SIEM, it's time to dive into querying and analyzing the logs within the SIEM interface.
+
+Go to the logs in the Observability section that can seen in the Menu Bar of the Elastic Console.
+
+- Utilize the search bar to filter the logs according to your criteria. To isolate logs associated with Nmap scans, input the following query: event.action: "nmap_scan" or process.args: "sudo".
+
+The results of your search query will be presented in a structured table format below.
+
+By generating and analyzing various types of security events within Elastic SIEM, such as those described above, or simulating authentication failures by inputting incorrect passwords for user accounts or attempting SSH logins with invalid credentials, one can enhance your comprehension of how security incidents are identified, investigated, and addressed within real-world environments.
+
+### Create a Dashboard to Visualize the Events
 
 
 
