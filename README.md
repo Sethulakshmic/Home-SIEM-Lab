@@ -39,8 +39,10 @@ In order to effectively monitor security events on your Kali VM and ensure they'
   
    sudo systemctl status elastic-agent.service
 #### For generating some Security-related Events on the Kali VM, here I used Nmap Tool .
-initiate a NMap scan on your Kali machine:
-nmap -sC -sV -p- localhost
+Initiate a Nmap scan on your Kali machine:
+```nmap
+ nmap -sC -sV -p- localhost
+```
 The above command performs a detailed network scan on your local machine, using default scripts and version detection across all 65535 ports.
 
 ### Querying for security events just created
@@ -48,7 +50,10 @@ With data seamlessly forwarded from the Kali VM to our SIEM, it's time to dive i
 
 Go to the logs in the Observability section that can seen in the Menu Bar of the Elastic Console.
 
-- Utilize the search bar to filter the logs according to your criteria. To isolate logs associated with Nmap scans, input the following query: event.action: "nmap_scan" or process.args: "sudo".
+- Utilize the search bar to filter the logs according to your criteria. To isolate logs associated with Nmap scans, input the following query:
+   ```
+  event.action: "nmap_scan" or process.args: "nmap".
+   ```
 
 The results of your search query will be presented in a structured table format below.
 
