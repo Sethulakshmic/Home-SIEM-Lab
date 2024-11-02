@@ -1,4 +1,4 @@
-# Home SIEM Lab
+#  SIEM Home Lab
 
 ### Project Overview
 
