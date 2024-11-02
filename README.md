@@ -1,6 +1,11 @@
 #  SIEM Home Lab
-## Table Of Contents
+### Table Of Contents
+- [Project Overview](#project-overview)
+- [Setup Essentials I Used](#setup-essentials-i-used)
+- [Overview of the tasks](#overview-of-the-tasks)
+- [Setting up the Elastic Agent on the Linux VM](#setting-up-the-elastic-agent-on-the-linux-vm)
 - [Querying for security events just created](#querying-for-security-events-just-created)
+- [Create a Dashboard to Visualize the Events](#create-a-dashboard-to-visualize-the-events)
 ### Project Overview
 
 This project sets up a home lab for Elastic Stack Security Information and Event Management (SIEM) lab using the Elastic Web Portal and a Kali Linux VM. It aims to learn generating security events on Kali VM ,setting up an agent to forward data to the SIEM, and query and analyze the logs in the SIEM.
@@ -20,10 +25,10 @@ This project sets up a home lab for Elastic Stack Security Information and Event
 - Creating a dashboard to visualize security events.
 - Setting up alerts for security events.
 
-## Setting up an Elastic Account
+#### Setting up an Elastic Account
 After registering, logged in to the Elastic Cloud console at https://cloud.elastic.co. Click on "Start your free trial" to kick off the process.
 
-## Setting up the Elastic Agent on the Linux VM 
+### Setting up the Elastic Agent on the Linux VM 
 
 #### Purpose of Elastic Agent
 
