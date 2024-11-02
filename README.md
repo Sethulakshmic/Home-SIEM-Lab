@@ -17,3 +17,6 @@ This project sets up a home lab for Elastic Stack Security Information and Event
 - Querying and analyzing security events in the Elastic SIEM.
 - Creating a dashboard to visualize security events.
 - Setting up alerts for security events.
+
+## Setting up Elastic Account
+After registering, log in to the Elastic Cloud console at https://cloud.elastic.co.
