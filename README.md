@@ -1,5 +1,6 @@
 #  SIEM Home Lab
-
+## Table Of Contents
+- [Querying for security events just created](#querying-for-security-events-just-created)
 ### Project Overview
 
 This project sets up a home lab for Elastic Stack Security Information and Event Management (SIEM) lab using the Elastic Web Portal and a Kali Linux VM. It aims to learn generating security events on Kali VM ,setting up an agent to forward data to the SIEM, and query and analyze the logs in the SIEM.
