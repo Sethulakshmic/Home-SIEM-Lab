@@ -1,3 +1,4 @@
+
 #  SIEM Home Lab
 ### Table Of Contents
 - [Project Overview](#project-overview)
@@ -48,6 +49,7 @@ In order to effectively monitor security events on your Kali VM and ensure they'
 Initiate a Nmap scan on your Kali machine:
 ```nmap
  nmap -sC -sV -p- localhost
+
 ```
 The above command performs a detailed network scan on your local machine, using default scripts and version detection across all 65535 ports.
 
