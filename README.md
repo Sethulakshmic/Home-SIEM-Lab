@@ -61,7 +61,7 @@ Go to the logs in the Observability section that can seen in the Menu Bar of the
   event.action: "nmap_scan" or process.args: "nmap".
    ```
 
-The results of your search query will be presented in a structured table format below.
+The results of the search query will be presented in a structured table format below.
 
 By generating and analyzing various types of security events within Elastic SIEM, such as those described above, or simulating authentication failures by inputting incorrect passwords for user accounts or attempting SSH logins with invalid credentials, one can enhance your comprehension of how security incidents are identified, investigated, and addressed within real-world environments.
 
