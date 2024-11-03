@@ -36,12 +36,25 @@ After registering, logged in to the Elastic Cloud console at https://cloud.elast
 In order to effectively monitor security events on your Kali VM and ensure they're sent to your Elastic SIEM instance, we need to set up an agent. Agents play a crucial role in collecting and transmitting data from devices to a centralized system for analysis and monitoring.
 
 #### Steps for Configuring the Elastic Agent on the Kali Linux to Collect and Forward Logs to the SIEM
-1. In the Elastic Cloud console , Click "Add Integration" button in the bottom of the main Menu Bar.
+
+![Screenshot 2024-11-03 213510](https://github.com/user-attachments/assets/0934b564-2a0c-46f1-b404-a40dbe450d71)
+1. In the Elastic Cloud console , Click "Add Integration" button in the bottom of the main Menu Bar.  
+![Screenshot 2024-11-03 213609](https://github.com/user-attachments/assets/ced135fd-75c6-4994-ac50-074a3bd7bd82)
+
 2. Search for "Elastic Defend" and click on it to open the integration page.
+
+![Screenshot 2024-11-03 213625](https://github.com/user-attachments/assets/f536ac60-e322-4e1a-b4ba-97e0afbbb17e)
+
 3. Next, click on "Install Elastic Defend" and carefully follow the instructions provided on the integration page to install the agent on your Kali VM.
+
+
    - Make sure to select "Linux" and copy the provided command to your clipboard.
    - Paste the copied command into the terminal of your Kali VM and run it.
-4. Once the installation process is complete, which may take a few minutes, you'll receive a confirmation message stating "Elastic Agent has been successfully installed." The agent will automatically start collecting and forwarding logs to your Elastic SIEM instance. However, it might take a few minutes for the logs to appear in the SIEM.
+
+![Screenshot 2024-11-03 213806](https://github.com/user-attachments/assets/7c724160-70ef-423d-a3d1-f3017293cbb4)
+
+
+5. Once the installation process is complete, which may take a few minutes, you'll receive a confirmation message stating "Elastic Agent has been successfully installed." The agent will automatically start collecting and forwarding logs to your Elastic SIEM instance. However, it might take a few minutes for the logs to appear in the SIEM.
 - Verify that the agent has been installed correctly, run the following command in your Kali terminal:
   
    sudo systemctl status elastic-agent.service
